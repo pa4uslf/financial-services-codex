@@ -1,3 +1,5 @@
+# This is my fork of anthropic/financial-services, and it's still in developing prograss.
+
 # Claude for Financial Services
 
 Reference agents, skills, and data connectors for the financial-services workflows we see most — investment banking, equity research, private equity, and wealth management.
