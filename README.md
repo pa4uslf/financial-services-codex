@@ -4,6 +4,8 @@
 
 Reference agents, skills, and data connectors for the financial-services workflows we see most — investment banking, equity research, private equity, and wealth management.
 
+This fork is also **Codex-friendly for maintenance**: see [`AGENTS.md`](./AGENTS.md), [`.agentlens/INDEX.md`](./.agentlens/INDEX.md), and [`docs/codex-usage.md`](./docs/codex-usage.md) for repository navigation, validation commands, and safe adaptation boundaries. The plugin runtime documented below remains Claude-oriented unless a future change adds and validates a Codex-native package.
+
 Everything here is available **two ways from one source**: install it as a [Claude Cowork](https://claude.com/product/cowork) plugin, or deploy it through the [Claude Managed Agents API](https://docs.claude.com/en/api/managed-agents) behind your own workflow engine. Same system prompt, same skills — you choose where it runs.
 
 > [!IMPORTANT]
@@ -76,6 +78,20 @@ claude plugin install equity-research@claude-for-financial-services
 ```
 
 Once installed, agents appear in Cowork dispatch, skills fire automatically when relevant, and slash commands are available in your session (`/comps`, `/dcf`, `/earnings`, `/ic-memo`, …).
+
+### Codex Maintenance
+
+Codex can maintain this fork as a file-based repository, but this is not a
+Codex-native plugin package yet. Start with:
+
+- [`AGENTS.md`](./AGENTS.md) for Codex execution rules and source-of-truth paths.
+- [`.agentlens/INDEX.md`](./.agentlens/INDEX.md) for a quick map of agents,
+  skills, cookbooks, manifests, and validation scripts.
+- [`docs/codex-usage.md`](./docs/codex-usage.md) for safe ways to reuse or adapt
+  Claude skills in Codex without breaking Claude plugin semantics.
+
+For documentation-only Codex navigation changes, run `python3 scripts/check.py`
+before pushing.
 
 ### Claude Managed Agents
 

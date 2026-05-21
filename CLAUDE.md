@@ -2,6 +2,10 @@
 
 Cowork plugins and Claude Managed Agent templates for financial services. Each named agent ships two ways from one source.
 
+Codex maintainers should also read `AGENTS.md`, `.agentlens/INDEX.md`, and
+`docs/codex-usage.md`. Those files document the Codex-facing navigation and
+adaptation boundary without changing the Claude plugin runtime described here.
+
 ## Repository Structure
 
 ```
