@@ -1,4 +1,4 @@
-# This is my fork of anthropic/financial-services, and it's still in developing prograss.
+# This is my fork of `anthropic/financial-services`, and it is still in development.
 
 # Claude for Financial Services
 
@@ -55,14 +55,14 @@ scripts/                       # deploy-managed-agent.sh · check.py · validate
 
 In Cowork, open **Settings → Plugins → Add plugin** and either:
 
-- **Paste this repo URL** — `https://github.com/anthropics/financial-services` — then pick the agents and verticals you want from the marketplace list, or
+- **Paste this repo URL** — `https://github.com/pa4uslf/financial-services-codex` — then pick the agents and verticals you want from the marketplace list, or
 - **Upload a zip** — zip any directory under `plugins/` (e.g. `plugins/agent-plugins/pitch-agent/`) and drop it in.
 
 ### Claude Code
 
 ```bash
 # Add the marketplace
-claude plugin marketplace add anthropics/financial-services
+claude plugin marketplace add pa4uslf/financial-services-codex
 
 # Core skills + connectors (install first)
 claude plugin install financial-analysis@claude-for-financial-services
